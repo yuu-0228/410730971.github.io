@@ -1,0 +1,42 @@
+<html>
+<head>
+<sytyle>
+　　　p1 {  
+　　　　　border: 1px solid;
+            　　margin: 20px;
+        }
+　</style>
+</head>
+
+<body bgcolor="64dfdf">
+<p1>
+　<b>
+　　<font size="5">
+　　<p align="center">這裡是410730971的個人網站</p>
+　　</font>
+　</b>
+</p1>
+　<font size="３">
+　<br>
+<br>
+　<img src="頭4.png" height="15%" align="center">
+　早安你好　我是教科二A的陳雅淯
+　<br><br>
+　<font size="3">其他作業的傳送門↓</font>
+
+　<u1>
+　　<li>
+　　　<font size="3">HW02</font>
+　　</li>
+　　<li>
+　　　<font size="3">HW03</font>
+　　</li>
+　　<li>
+　　　<font size="3">HW04</font>
+　　</li>
+　</u1>
+　</font>
+
+
+</body>
+</html>
