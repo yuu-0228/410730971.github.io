@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UFT-8"/>
+        <title>HW02</title>
+        <style type="text/css">
+            input{
+                width: 50px;
+                height: 50px;
+                color: #03045e;
+                border-color: #caf0f8;
+                font-size: 15pt;
+            }
+            #result{
+                width: 153px;
+                height: 40px;
+                color: #0077b6;
+                font-size: 17pt;
+            }
+            table{
+                margin:100px auto;
+                border: 4px solid #03045e;
+                
+            }
+        </style>
+    </head>
+
+    <body bgcolor="#90e0ef" >
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="result"></td>
+                <td><input type="button" id="kClear" value="C" ></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" id="k7" value="7"></td>
+                <td><input type="button" id="k8" value="8"></td>
+                <td><input type="button" id="k9" value="9"></td>
+                <td><input type="button" id="kDiv" value=" /"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="k4" value="4"></td>
+                <td><input type="button" id="k5" value="5"></td>
+                <td><input type="button" id="k6" value="6"></td>
+                <td><input type="button" id="kMul" value="*"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="k1" value="1"></td>
+                <td><input type="button" id="k2" value="2"></td>
+                <td><input type="button" id="k3" value="3"></td>
+                <td><input type="button" id="kMinus" value="-"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="kEq" value="="></td>
+                <td><input type="button" id="k0" value="0"></td>
+                <td><input type="button" id="kPoint" value="."></td>
+                <td><input type="button" id="kPlus" value="+"></td>
+            </tr>
+        </table>
+
+        <script>
+            document.getElementById("result").disabled=true;
+
+            result = document.getElementById("result");
+            document.getElementById("k0").onclick = function(){result.value +="0"};
+            document.getElementById("k1").onclick = function(){result.value +="1"};
+            document.getElementById("k2").onclick = function(){result.value +="2"};
+            document.getElementById("k3").onclick = function(){result.value +="3"};
+            document.getElementById("k4").onclick = function(){result.value +="4"};
+            document.getElementById("k5").onclick = function(){result.value +="5"};
+            document.getElementById("k6").onclick = function(){result.value +="6"};
+            document.getElementById("k7").onclick = function(){result.value +="7"};
+            document.getElementById("k8").onclick = function(){result.value +="8"};
+            document.getElementById("k9").onclick = function(){result.value +="9"};
+            document.getElementById("kPlus").onclick = function(){result.value +="+"};
+            document.getElementById("kMinus").onclick = function(){result.value +="-"};
+            document.getElementById("kMul").onclick = function(){result.value +="*"};
+            document.getElementById("kDiv").onclick = function(){result.value +="/"};
+            document.getElementById("kPoint").onclick = function(){result.value +="."};
+            document.getElementById("kClear").onclick = function(){
+                document.getElementById("result").value=""
+            };
+            document.getElementById("kEq").onclick = function(){
+                try {
+                    result.value = eval(result.value);
+                }
+                catch(e){
+                    elert("ERROR!!")
+                }
+            };
+        </script>
+    </body>
+
+</html>
